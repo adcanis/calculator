@@ -18,7 +18,7 @@ function printValue(val) {
         if (val == 'CE') {
             out.innerHTML = current.slice(0, -1);
             if (out.innerHTML.length <= 1) {
-                out.innerHTML = '0';
+                out.innerHTML = '';
             }
         }
     }
@@ -26,7 +26,7 @@ function printValue(val) {
         out.innerHTML += val;
     }
     if (val == 'C') {
-        out.innerHTML = '0';
+        out.innerHTML = '';
     }
     if (val == '=') {
         let res = out.innerHTML;
